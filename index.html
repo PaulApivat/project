@@ -4,7 +4,13 @@ Hello World
 <html>
 	<head>
 		<title> Project 0 </title>
-		<script type="text/javascript" src="date.js" async></script>
+
+		<!-- This must be added for JQuery to work on the web (deployment); must add separately to work in local server (production) -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+			<!-- JQuery downloaded and saved locally in the same file (production) -->
+			<script type="text/javascript" src="jquery-2.2.1.js"></script>  
+			<script type="text/javascript" src="date.js" async></script>
+			<link rel="stylesheet" type="text/css" href="project.css"/>
 	</head>
 
 	<body>
@@ -21,6 +27,14 @@ Hello World
 			<h2>
 				<span id="hour"></span> : <span id="min"></span>
 			</h2>
+
+			<h3>To Do List App</h3>
+			<p>This will take any word/phrase entered into text box and print it out below. Subtle JQuery trick like 'make existing text disappear' once clicked and highlighting box in red are shown.</p>
+			<form>   <!-- HTML Form Element -->
+				Enter Task: <input type="text" name="message" value="Enter your task here.">
+			</form>
+			<button> Add Task! </button>
+			<div id="messages"></div>
 	</body>
 
 

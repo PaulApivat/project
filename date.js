@@ -8,11 +8,31 @@
  var min = today.getMinutes();
  document.getElementById('min').innerHTML=min;
 
-//function timeNow(i){
-//	var d = new Date();
-//			h = (d.getHours()<10?'0':'') + d.getHours(),
-//			m = (d.getMinutes()<10?'0':'') + d.getMinutes();
-//	i.value = h + ':' + m;
-//}
 
-//document.getElementById(timeNow).innerHTML=today;
+//To Do List App
+//First function clears textbox with .val('') once it's clicked
+
+$(document).ready(function(){
+	$('input[name=message]').click(function(){
+		$(this).val('');
+	});
+});
+
+//Second function takes whatever is entered into textbox and prints it below
+
+$(document).ready(function(){
+	$('button').click(function(){
+		var toAdd = $('input[name=message]').val();
+			$('#messages').append("<p>" + toAdd+"</p>");
+	});
+});
+
+//Third function highlights textbox in red when clicked
+
+$(document).ready(function(){
+	$('input').focus(function(){
+		$(this).css('outline-color', '#FF0000');
+	});
+});
+
+
