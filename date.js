@@ -12,11 +12,11 @@
 //To Do List App
 //First function clears textbox with .val('') once it's clicked
 
-$(document).ready(function(){
-	$('input[name=message]').click(function(){
-		$(this).val('');
-	});
-});
+//$(document).ready(function(){
+//	$('input[name=message]').click(function(){
+//		$(this).val('');
+//	});
+//});
 
 //Second function takes whatever is entered into textbox and prints it below
 
@@ -27,11 +27,11 @@ $(document).ready(function(){
 	});
 });
 
-//Third function highlights textbox in red when clicked
+//Third function highlights textbox in red when clicked. Updated to include additiona .val('') function with LESS code
 
 $(document).ready(function(){
 	$('input').focus(function(){
-		$(this).css('outline-color', '#FF0000');
+		$(this).css('outline-color', '#FF0000'), $(this).val('');
 	});
 });
 
