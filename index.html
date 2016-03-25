@@ -1,42 +1,58 @@
-<<<<<<< HEAD
-Hello World
-=======
+
 <html>
 	<head>
 		<title> Project 0 </title>
 
-		<!-- This must be added for JQuery to work on the web (deployment); must add separately to work in local server (production) -->
+		
+			<link rel="stylesheet" type="text/css" href="project.css"/>
+	</head>
+
+	<body onload="startTime()">
+
+		<div class="title">
+				<h1 class="shadow" > It's Javascript Time </h1>
+		</div>
+
+		<div class="date">
+			<h2>  </h2>
+			<div class="shadow" id="current_date"></div>
+		</div>		
+
+		<div class="time">
+			<h2>   </h2>
+			<div class="shadow" id="txt"></div>
+		</div>
+					
+					<!-- h2> Date </h2>
+					<p> Today's date is : </p>
+					<h2>
+						<span id="time"></span>
+					</h2>
+
+					<p> The time is : </p>
+					<h2>
+						<span id="hour"></span> : <span id="min"></span>
+					</h2 -->
+	
+
+		<div class="todo">
+				<h3>To Do </h3>
+				<p>This will take any word/phrase entered into text box and print it out below. Subtle JQuery trick like 'make existing text disappear' once clicked and highlighting box in red are shown.</p>
+				<form>   <!-- HTML Form Element -->
+					Enter Task: <input type="text" name="message" value="Enter your task here.">
+				</form>
+				<button> Add Task! </button>
+				<div id="messages"></div>
+		</div>
+
+<!-- This must be added for JQuery to work on the web (deployment); must add separately to work in local server (production) -->
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 			<!-- JQuery downloaded and saved locally in the same file (production) -->
 			<script type="text/javascript" src="jquery-2.2.1.js"></script>  
 			<script type="text/javascript" src="date.js" async></script>
-			<link rel="stylesheet" type="text/css" href="project.css"/>
-	</head>
 
-	<body>
-		<h1> Vanilla Javascript </h1>
-		<p> This first project is supposed to display the current time on your browser. Presumbly the current time where ever you are. Just figuring out how to tie in javascript with HTML feels like an accomplishment. </p>
-
-		<h2> Date </h2>
-			<p> Today's date is : </p>
-			<h2>
-				<span id="time"></span>
-			</h2>
-
-			<p> The time is : </p>
-			<h2>
-				<span id="hour"></span> : <span id="min"></span>
-			</h2>
-
-			<h3>To Do List App</h3>
-			<p>This will take any word/phrase entered into text box and print it out below. Subtle JQuery trick like 'make existing text disappear' once clicked and highlighting box in red are shown.</p>
-			<form>   <!-- HTML Form Element -->
-				Enter Task: <input type="text" name="message" value="Enter your task here.">
-			</form>
-			<button> Add Task! </button>
-			<div id="messages"></div>
 	</body>
 
 
 </html>
->>>>>>> master
+

@@ -1,12 +1,40 @@
 
- var today = new Date();
- document.getElementById('time').innerHTML=today;
+ 
+var d = new Date();
+var month = d.getMonth() + 1;
+var day = d.getDate();
+var year = d.getFullYear();
+var date = month + "/" + day + "/" + year;
 
- var hour = today.getHours();
- document.getElementById('hour').innerHTML=hour;
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 
- var min = today.getMinutes();
- document.getElementById('min').innerHTML=min;
+document.getElementById('current_date').innerHTML = date;
+
+
+
+
+ // var today = new Date();
+ // document.getElementById('time').innerHTML=today;
+
+ // var hour = today.getHours();
+ // document.getElementById('hour').innerHTML=hour;
+
+ // var min = today.getMinutes();
+ // document.getElementById('min').innerHTML=min;
 
 
 //To Do List App

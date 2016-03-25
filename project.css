@@ -2,3 +2,30 @@
 input {
     font-family: Verdana, Arial, Sans-Serif;
 }
+
+.title h1 {
+	background-color: black;
+	text-align: center;
+}
+
+#current_date {
+	background-color: black;
+	text-align: center;
+	font-size: 50px;
+}
+
+.shadow {
+   color: white; 
+   font: bold 52px Helvetica, Arial, Sans-Serif;
+   text-shadow: 1px 1px #00FF99, 
+                2px 2px #00FF99, 
+                3px 3px #00FF99;
+}
+
+#txt {
+	background-color: black;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+
+}
